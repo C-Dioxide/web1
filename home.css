@@ -54,44 +54,23 @@
 
 /*                  menu-check-btn end,menu-content start                  */
 
+body {
+  background-color: #ab9292;
+}
+
+
+
 .menu-content {
-  width: 100%;
   height: 100%;
+  width: 100%;
   position: fixed;
   top: 0;
-  left: 100%;
+  left:100%;
   z-index: 80;
-  background-color: #f8f8ff;
+  background-color: #ffffff;
   transition: all 0.7s;/*アニメーション設定*/
 }
-.menu-content ul {
-  padding: 70px 10px 0;
-}
-.menu-content ul li {
-  border-bottom: solid 1px #ffffff;
-  list-style: none;
-}
-.menu-content ul li a {
-  display: block;
-  width: 100%;
-  font-size: 15px;
-  box-sizing: border-box;
-  color:#ffffff;
-  text-decoration: none;
-  padding: 9px 15px 10px 0;
-  position: relative;
-}
-.menu-content ul li a::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-top: solid 2px #ffffff;
-  border-right: solid 2px #ffffff;
-  transform: rotate(45deg);
-  position: absolute;
-  right: 11px;
-  top: 16px;
-}
+
 
 #menu-btn-check:checked ~ .menu-content {
   left: 0;/*メニューを画面内へ*/
@@ -103,15 +82,8 @@ html{
   scroll-behavior: smooth;
 }
 
-
-
-
-
-
-
-
-
 /*おわり*/
+
 
 
 /*menu-end*/
@@ -122,10 +94,12 @@ html{
 
   /*menu*/
 
+ 
   .Menu-Group-Item {
-    display: flex;
     padding: 10px;
     text-align: center;
+    justify-content: center;
+    display: flex;
     
   }
   
@@ -168,20 +142,26 @@ html{
     /*PC*/
 
   /*menu*/
-
-  .Menu-Group-Item {
+  .menu-content {
+    height: 50%;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    text-align: center;
+    padding-top: 40px;
+  }
+
+  .Menu-Group-Item {
+    text-align: left;
+    align-items: center;
+    padding-top: 7px;
+    padding-left: 8px;
     
   }
-  
+
   
   .Menu-Group-Item-Link {
     padding: 1.5em ;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     border: solid 2px #111;
     background: rgba(255, 255, 255, 0);
     font-size: 16px;
@@ -200,7 +180,7 @@ html{
     width: 60px;
     height: 60px;
     box-sizing: border-box;
-    background: #363636;
+    background: #272727;
     border: 1px solid rgb(0, 0, 0);
     padding-top: 30px;
     text-align: center;
@@ -213,6 +193,7 @@ html{
     bottom: 20px;
     right: 20px;
     z-index: 10000;
+    border-radius: 50%;
   }
   
   .gotop::before{
